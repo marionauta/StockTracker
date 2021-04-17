@@ -4,14 +4,13 @@ struct TrackerScreen: View {
     @StateObject private var viewModel = TrackerViewModel()
 
     var body: some View {
-        VStack {
-            ScrollView {
-                MainPositionView(model: viewModel.positions.totalPosition)
+        ScrollView {
+            MainPositionView(model: viewModel.positions.totalPosition)
 
-                LazyVStack {
-                    ForEach(viewModel.positions) { position in
-                        StockRow(model: position)
-                    }
+            LazyVStack {
+                ForEach(viewModel.positions) { position in
+                    Divider()
+                    StockRow(model: position)
                 }
             }
         }

@@ -18,6 +18,7 @@ struct StockRow: View {
                 PercentIncreaseView(percent: model.position.increase)
             }
         }
-        .padding([.horizontal, .bottom], 2.units.cg)
+        .padding(.horizontal, 2.units.cg)
+        .padding(.vertical, 1.units.cg)
     }
 }
