@@ -22,9 +22,7 @@ final class TrackerViewModel: ObservableObject {
                 let position = Position(current: currentPrice, original: totalPrice)
                 let count = transactions.map(\.count).reduce(0, +)
                 return StockPosition(ticker: ticker, amount: count, position: position)
-
-            }.sorted { (a, b) -> Bool in
-                (a.position.current * a.amount) > (b.position.current * b.amount)
             }
+            .sorted { $0.position.current > $1.position.current }
     }
 }
