@@ -11,7 +11,6 @@
 		AC2BB185262A0BB700A9F867 /* StockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB184262A0BB700A9F867 /* StockRow.swift */; };
 		AC2BB188262A0D1700A9F867 /* DollarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB187262A0D1700A9F867 /* DollarView.swift */; };
 		AC2BB18F262A11E900A9F867 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB18E262A11E900A9F867 /* Position.swift */; };
-		AC2BB192262A157800A9F867 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = AC2BB191262A157800A9F867 /* Localizable.stringsdict */; };
 		AC2BB196262A3B5D00A9F867 /* TrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB195262A3B5D00A9F867 /* TrackerViewModel.swift */; };
 		AC2BB19A262A3F4900A9F867 /* HelperKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC2BB199262A3F4900A9F867 /* HelperKit */; };
 		AC2BB19F262A403D00A9F867 /* AddTransactionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB19E262A403D00A9F867 /* AddTransactionScreen.swift */; };
@@ -25,10 +24,11 @@
 		AC2BB1C0262ADD6000A9F867 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB1BF262ADD6000A9F867 /* MainScreen.swift */; };
 		AC2BB1C5262ADF6100A9F867 /* WithNavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB1C4262ADF6100A9F867 /* WithNavigationModifier.swift */; };
 		AC2BB1C9262AF86E00A9F867 /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB1C8262AF86E00A9F867 /* NumberTextField.swift */; };
+		AC2BB1D9262B093D00A9F867 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2BB1DB262B093D00A9F867 /* Localizable.strings */; };
+		AC2BB1DE262B094500A9F867 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = AC2BB1E0262B094500A9F867 /* Localizable.stringsdict */; };
 		ACBBE142262A005A00D964D8 /* StockTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBBE141262A005A00D964D8 /* StockTrackerApp.swift */; };
 		ACBBE146262A005B00D964D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBBE145262A005B00D964D8 /* Assets.xcassets */; };
 		ACBBE157262A00C800D964D8 /* TrackerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBBE156262A00C800D964D8 /* TrackerScreen.swift */; };
-		ACBBE15C262A014600D964D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACBBE15B262A014600D964D8 /* Localizable.strings */; };
 		ACBBE161262A02F200D964D8 /* MainPositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBBE160262A02F200D964D8 /* MainPositionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,6 @@
 		AC2BB184262A0BB700A9F867 /* StockRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRow.swift; sourceTree = "<group>"; };
 		AC2BB187262A0D1700A9F867 /* DollarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarView.swift; sourceTree = "<group>"; };
 		AC2BB18E262A11E900A9F867 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		AC2BB191262A157800A9F867 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		AC2BB195262A3B5D00A9F867 /* TrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewModel.swift; sourceTree = "<group>"; };
 		AC2BB19E262A403D00A9F867 /* AddTransactionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionScreen.swift; sourceTree = "<group>"; };
 		AC2BB1A7262AC6C800A9F867 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
@@ -48,12 +47,15 @@
 		AC2BB1BF262ADD6000A9F867 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		AC2BB1C4262ADF6100A9F867 /* WithNavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithNavigationModifier.swift; sourceTree = "<group>"; };
 		AC2BB1C8262AF86E00A9F867 /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
+		AC2BB1DA262B093D00A9F867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AC2BB1DD262B094100A9F867 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AC2BB1DF262B094500A9F867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		AC2BB1E2262B094900A9F867 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		ACBBE13E262A005A00D964D8 /* StockTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBBE141262A005A00D964D8 /* StockTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerApp.swift; sourceTree = "<group>"; };
 		ACBBE145262A005B00D964D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACBBE14A262A005B00D964D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBBE156262A00C800D964D8 /* TrackerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerScreen.swift; sourceTree = "<group>"; };
-		ACBBE15B262A014600D964D8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		ACBBE160262A02F200D964D8 /* MainPositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPositionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				ACBBE14A262A005B00D964D8 /* Info.plist */,
-				ACBBE15B262A014600D964D8 /* Localizable.strings */,
-				AC2BB191262A157800A9F867 /* Localizable.stringsdict */,
+				AC2BB1DB262B093D00A9F867 /* Localizable.strings */,
+				AC2BB1E0262B094500A9F867 /* Localizable.stringsdict */,
 				ACBBE141262A005A00D964D8 /* StockTrackerApp.swift */,
 			);
 			path = App;
@@ -249,6 +251,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = ACBBE135262A005A00D964D8;
 			packageReferences = (
@@ -270,8 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBBE146262A005B00D964D8 /* Assets.xcassets in Resources */,
-				ACBBE15C262A014600D964D8 /* Localizable.strings in Resources */,
-				AC2BB192262A157800A9F867 /* Localizable.stringsdict in Resources */,
+				AC2BB1D9262B093D00A9F867 /* Localizable.strings in Resources */,
+				AC2BB1DE262B094500A9F867 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +306,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC2BB1DB262B093D00A9F867 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC2BB1DA262B093D00A9F867 /* en */,
+				AC2BB1DD262B094100A9F867 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AC2BB1E0262B094500A9F867 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC2BB1DF262B094500A9F867 /* en */,
+				AC2BB1E2262B094900A9F867 /* es */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACBBE14B262A005B00D964D8 /* Debug */ = {

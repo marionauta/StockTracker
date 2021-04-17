@@ -1,0 +1,19 @@
+// Tracker
+
+"tracker_title" = "Tu inversión";
+"tracker_tab_title" = "Rastreador";
+
+// Transactions
+
+"transactions_title" = "Transacciones";
+"transactions_tab_title" = "Transacciones";
+"transactions_add_button" = "Añadir transacción";
+
+// Transactions -- Add
+
+"transactions_add_title" = "Nueva transacción";
+"transactions_add_ticker" = "Ticker";
+"transactions_add_count" = "Cantidad";
+"transactions_add_price" = "Precio";
+"transactions_add_date" = "Fecha efectiva";
+"transactions_add_save" = "Guardar";
