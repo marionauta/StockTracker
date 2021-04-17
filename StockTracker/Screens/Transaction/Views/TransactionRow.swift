@@ -23,5 +23,6 @@ struct TransactionRow: View {
                     .foregroundColor(.secondary)
             }
         }
+        .padding(.vertical, 1.units.cg)
     }
 }
