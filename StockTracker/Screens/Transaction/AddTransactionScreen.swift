@@ -1,4 +1,3 @@
-import Combine
 import SwiftUI
 
 private let countFormatter = NumberFormatter().apply {
@@ -21,10 +20,10 @@ struct AddTransactionScreen: View {
         Form {
             TextField("transactions_add_ticker", text: $ticker)
 
-            TextField("transactions_add_count", value: $count, formatter: countFormatter)
-                .keyboardType(.numberPad)
+            NumberTextField("transactions_add_count", value: $count, formatter: countFormatter)
+                .keyboardType(.decimalPad)
 
-            TextField("transactions_add_price", value: $price, formatter: priceFormatter)
+            NumberTextField("transactions_add_price", value: $price, formatter: priceFormatter)
                 .keyboardType(.decimalPad)
 
             DatePicker("transactions_add_date", selection: $effectiveDate)
