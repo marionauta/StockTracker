@@ -3,6 +3,11 @@
 "tracker_title" = "Tu inversión";
 "tracker_tab_title" = "Rastreador";
 
+// Percent Increase View
+
+"percent_increase" = "Incremento";
+"percent_decrease" = "Decremento";
+
 // Transactions
 
 "transactions_title" = "Transacciones";

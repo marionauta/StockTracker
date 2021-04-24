@@ -16,10 +16,13 @@ struct PercentIncreaseView: View {
             Image(systemName: arrowIconName)
                 .resizable()
                 .frame(width: 8, height: 8, alignment: .center)
+                .accessibility(label: Text(arrowIconLabel))
+                .accessibility(removeTraits: .isImage)
 
             Text(percent as NSObject, formatter: percentFormatter)
         }
         .foregroundColor(foregroundColor)
+        .accessibilityElement(children: .combine)
     }
 
     private var foregroundColor: Color {
@@ -39,6 +42,14 @@ struct PercentIncreaseView: View {
             return "arrowtriangle.up.fill"
         } else {
             return "arrowtriangle.down.fill"
+        }
+    }
+
+    private var arrowIconLabel: LocalizedStringKey {
+        if percent >= 0 {
+            return "percent_increase"
+        } else {
+            return "percent_decrease"
         }
     }
 }
