@@ -1,5 +1,10 @@
 import SwiftUI
 
+private let formatter = NumberFormatter().apply {
+    $0.minimumFractionDigits = 0
+    $0.maximumFractionDigits = 2
+}
+
 struct StockRow: View {
     var model: StockPosition
 
@@ -7,8 +12,13 @@ struct StockRow: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(model.ticker)
-                Text("\(model.amount) stock_count")
-                    .foregroundColor(.secondary)
+
+                HStack(alignment: .firstTextBaseline, spacing: 4) {
+                    Text(model.amount as NSNumber, formatter: formatter)
+                    Text("\(model.amount) stock_count")
+                }
+                .foregroundColor(.secondary)
+                .accessibilityElement(children: .combine)
             }
 
             Spacer()

@@ -13,9 +13,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lf</string>
 			<key>one</key>
-			<string>One stock</string>
+			<string>stock</string>
 			<key>other</key>
-			<string>%.2lf stocks</string>
+			<string>stocks</string>
 		</dict>
 	</dict>
 </dict>

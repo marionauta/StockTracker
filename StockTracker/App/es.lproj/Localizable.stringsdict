@@ -13,9 +13,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lf</string>
 			<key>one</key>
-			<string>Una acción</string>
+			<string>acción</string>
 			<key>other</key>
-			<string>%.2lf acciones</string>
+			<string>acciones</string>
 		</dict>
 	</dict>
 </dict>
