@@ -20,6 +20,7 @@ struct StockRow: View {
                 .foregroundColor(.secondary)
                 .accessibilityElement(children: .combine)
             }
+            .accessibilityElement(children: .contain)
 
             Spacer()
 
@@ -27,6 +28,7 @@ struct StockRow: View {
                 DollarView(model.position.current)
                 PercentIncreaseView(percent: model.position.increase)
             }
+            .accessibilityElement(children: .contain)
         }
         .padding(.horizontal, 2.units.cg)
         .padding(.vertical, 1.units.cg)
