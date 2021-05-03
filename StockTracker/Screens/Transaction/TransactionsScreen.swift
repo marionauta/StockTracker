@@ -4,15 +4,13 @@ struct TransactionsScreen: View {
     @StateObject private var viewModel = TransactionsViewModel()
 
     var body: some View {
-        VStack {
-            List {
-                ForEach(viewModel.transactions) { transaction in
-                    TransactionRow(model: transaction)
-                }
-                .onDelete(perform: viewModel.deleteTransaction(at:))
+        List {
+            ForEach(viewModel.transactions) { transaction in
+                TransactionRow(model: transaction)
             }
-            .listStyle(PlainListStyle())
+            .onDelete(perform: viewModel.deleteTransaction(at:))
         }
+        .listStyle(PlainListStyle())
         .onAppear(perform: viewModel.load)
         .navigationTitle("transactions_title")
         .toolbar {
