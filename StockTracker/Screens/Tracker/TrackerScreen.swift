@@ -8,8 +8,8 @@ struct TrackerScreen: View {
             MainPositionView(model: viewModel.positions.totalPosition)
 
             LazyVStack {
-                ForEach(viewModel.positions) { position in
-                    Divider()
+                ForEach(viewModel.positions.indexed(), id: \.1.id) { index, position in
+                    index > 0 ? Divider() : nil
                     StockRow(model: position)
                 }
             }
