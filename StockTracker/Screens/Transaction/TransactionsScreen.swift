@@ -9,6 +9,7 @@ struct TransactionsScreen: View {
                 ForEach(viewModel.transactions.indexed(), id: \.1.id) { index, transaction in
                     index > 0 ? Divider() : nil
                     TransactionRow(model: transaction)
+                        .background(Color(UIColor.systemBackground))
                         .contextMenu {
                             Button {
                                 viewModel.deleteTransaction(with: transaction.id)
