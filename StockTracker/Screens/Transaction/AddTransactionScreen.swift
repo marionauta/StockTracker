@@ -19,6 +19,8 @@ struct AddTransactionScreen: View {
     var body: some View {
         Form {
             TextField("transactions_add_ticker", text: $ticker)
+                .autocapitalization(.allCharacters)
+                .disableAutocorrection(true)
 
             NumberTextField("transactions_add_count", value: $count, formatter: countFormatter)
                 .keyboardType(.decimalPad)
