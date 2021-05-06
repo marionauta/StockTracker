@@ -28,10 +28,7 @@ final class TransactionsViewModel: ObservableObject {
         modalRoute = nil
     }
 
-    public func deleteTransaction(at offsets: IndexSet) {
-        let transactions = offsets.map { index in self.transactions[safe: index] }.compactMap { $0 }
-        for transaction in transactions {
-            try? TransactionDataSource.shared.delete(id: transaction.id)
-        }
+    public func deleteTransaction(with transactionId: Transaction.ID) {
+        try? TransactionDataSource.shared.delete(id: transactionId)
     }
 }

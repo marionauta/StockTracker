@@ -32,6 +32,7 @@ struct TransactionRow: View {
                 .accessibilityElement(children: .combine)
             }
         }
+        .padding(.horizontal, 2.units.cg)
         .padding(.vertical, 1.units.cg)
     }
 }

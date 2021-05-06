@@ -4,13 +4,21 @@ struct TransactionsScreen: View {
     @StateObject private var viewModel = TransactionsViewModel()
 
     var body: some View {
-        List {
-            ForEach(viewModel.transactions) { transaction in
-                TransactionRow(model: transaction)
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.transactions.indexed(), id: \.1.id) { index, transaction in
+                    index > 0 ? Divider() : nil
+                    TransactionRow(model: transaction)
+                        .contextMenu {
+                            Button {
+                                viewModel.deleteTransaction(with: transaction.id)
+                            } label: {
+                                Label("transactions_delete", systemImage: "trash")
+                            }
+                        }
+                }
             }
-            .onDelete(perform: viewModel.deleteTransaction(at:))
         }
-        .listStyle(PlainListStyle())
         .onAppear(perform: viewModel.load)
         .navigationTitle("transactions_title")
         .toolbar {

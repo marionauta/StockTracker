@@ -13,6 +13,7 @@
 "transactions_title" = "Transacciones";
 "transactions_tab_title" = "Transacciones";
 "transactions_add_button" = "Añadir transacción";
+"transactions_delete" = "Borrar";
 
 // Transactions -- Add
 
