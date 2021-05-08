@@ -5,7 +5,7 @@ private let countFormatter = NumberFormatter().apply {
 }
 
 private let priceFormatter = NumberFormatter().apply {
-    $0.maximumFractionDigits = 2
+    $0.maximumFractionDigits = 4
 }
 
 struct AddTransactionScreen: View {
