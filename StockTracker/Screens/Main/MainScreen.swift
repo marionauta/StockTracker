@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MainScreen: View {
     enum Tab: CaseIterable {
-        case tracker, transactions
+        case tracker, transactions, about
 
         @ViewBuilder var view: some View {
             switch self {
@@ -13,6 +13,10 @@ struct MainScreen: View {
             case .transactions:
                 TransactionsScreen()
                     .modifier(WithNavigationModifier())
+
+            case .about:
+                AboutScreen()
+                    .modifier(WithNavigationModifier())
             }
         }
 
@@ -22,6 +26,8 @@ struct MainScreen: View {
                 Label("tracker_tab_title", systemImage: "dollarsign.circle")
             case .transactions:
                 Label("transactions_tab_title", systemImage: "list.bullet")
+            case .about:
+                Label("about_tab_title", systemImage: "gearshape")
             }
         }
     }

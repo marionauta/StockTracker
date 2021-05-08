@@ -23,3 +23,10 @@
 "transactions_add_price" = "Precio";
 "transactions_add_date" = "Fecha efectiva";
 "transactions_add_save" = "Guardar";
+
+// About
+
+"about_title" = "Acerca de";
+"about_tab_title" = "Acerca de";
+"about_donate_copy" = "Si te gustaría apoyar el desarrollo de StockTracker, puedes darme una propina.";
+"about_donate_button" = "¡Dar propina!";

@@ -23,3 +23,10 @@
 "transactions_add_price" = "Price";
 "transactions_add_date" = "Effective date";
 "transactions_add_save" = "Save";
+
+// About
+
+"about_title" = "About";
+"about_tab_title" = "About";
+"about_donate_copy" = "If you'd like to help with StockTracker development, consider giving me a tip!";
+"about_donate_button" = "Give a tip!";
