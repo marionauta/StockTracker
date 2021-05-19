@@ -27,6 +27,8 @@
 		AC2BB1D9262B093D00A9F867 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2BB1DB262B093D00A9F867 /* Localizable.strings */; };
 		AC2BB1DE262B094500A9F867 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = AC2BB1E0262B094500A9F867 /* Localizable.stringsdict */; };
 		AC4DC4112646D5BD009303AC /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DC4102646D5BD009303AC /* AboutScreen.swift */; };
+		AC547F4826558F2C00ECD528 /* InAppBrowserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC547F4726558F2C00ECD528 /* InAppBrowserScreen.swift */; };
+		AC547F4A2655910500ECD528 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC547F492655910500ECD528 /* AboutViewModel.swift */; };
 		AC74F3EF264463C9006C6A97 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AC74F3EE264463C9006C6A97 /* Algorithms */; };
 		ACBBE142262A005A00D964D8 /* StockTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBBE141262A005A00D964D8 /* StockTrackerApp.swift */; };
 		ACBBE146262A005B00D964D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBBE145262A005B00D964D8 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		AC2BB1DF262B094500A9F867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		AC2BB1E2262B094900A9F867 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		AC4DC4102646D5BD009303AC /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		AC547F4726558F2C00ECD528 /* InAppBrowserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppBrowserScreen.swift; sourceTree = "<group>"; };
+		AC547F492655910500ECD528 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
 		ACBBE13E262A005A00D964D8 /* StockTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBBE141262A005A00D964D8 /* StockTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerApp.swift; sourceTree = "<group>"; };
 		ACBBE145262A005B00D964D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2BB187262A0D1700A9F867 /* DollarView.swift */,
+				AC547F4726558F2C00ECD528 /* InAppBrowserScreen.swift */,
 				AC2BB1C8262AF86E00A9F867 /* NumberTextField.swift */,
 				AC2BB181262A081500A9F867 /* PercentIncreaseView.swift */,
 			);
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				AC4DC4102646D5BD009303AC /* AboutScreen.swift */,
+				AC547F492655910500ECD528 /* AboutViewModel.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -313,10 +319,12 @@
 				AC4DC4112646D5BD009303AC /* AboutScreen.swift in Sources */,
 				ACBBE161262A02F200D964D8 /* MainPositionView.swift in Sources */,
 				AC2BB18F262A11E900A9F867 /* Position.swift in Sources */,
+				AC547F4826558F2C00ECD528 /* InAppBrowserScreen.swift in Sources */,
 				AC2BB1BA262AD54700A9F867 /* TransactionRow.swift in Sources */,
 				AC2BB1C0262ADD6000A9F867 /* MainScreen.swift in Sources */,
 				ACBBE142262A005A00D964D8 /* StockTrackerApp.swift in Sources */,
 				AC2BB1B0262AD0EA00A9F867 /* TransactionsViewModel.swift in Sources */,
+				AC547F4A2655910500ECD528 /* AboutViewModel.swift in Sources */,
 				AC2BB1C9262AF86E00A9F867 /* NumberTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
