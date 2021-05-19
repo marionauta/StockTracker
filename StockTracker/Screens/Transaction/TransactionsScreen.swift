@@ -11,8 +11,11 @@ struct TransactionsScreen: View {
                     TransactionRow(model: transaction)
                         .background(Color(UIColor.systemBackground))
                         .contextMenu {
-                            Button {
-                                viewModel.deleteTransaction(with: transaction.id)
+                            Menu {
+                                Button("transactions_delete_cancel", action: {})
+                                Button("transactions_delete_confirm") {
+                                    viewModel.deleteTransaction(with: transaction.id)
+                                }
                             } label: {
                                 Label("transactions_delete", systemImage: "trash")
                             }

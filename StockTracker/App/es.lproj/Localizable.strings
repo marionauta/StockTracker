@@ -13,7 +13,9 @@
 "transactions_title" = "Transacciones";
 "transactions_tab_title" = "Transacciones";
 "transactions_add_button" = "Añadir transacción";
-"transactions_delete" = "Borrar";
+"transactions_delete" = "Borrar transacción";
+"transactions_delete_cancel" = "Cancelar";
+"transactions_delete_confirm" = "Borrar";
 
 // Transactions -- Add
 
